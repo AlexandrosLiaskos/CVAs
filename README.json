@@ -1,0 +1,106 @@
+{
+  "project": {
+    "name": "CVAs",
+    "title": "Coastal Vulnerability Assessment Software",
+    "definition": "A GEE-based implementation for automated coastal vulnerability assessment",
+    "vision": {
+      "primary": "Provide a streamlined, cloud-based FOSS web application named CVAs that automates coastal vulnerability assessment",
+      "development": "Plans for a dedicated GitHub repository to serve as a central hub for community contributions, methodologies, and related developments"
+    },
+    "highlights": [
+      "Automated and streamlined workflow",
+      "User-friendly GUI",
+      "User-defined flow",
+      "Cloud-based Web App (GEE)",
+      "Free and open-source"
+    ]
+  },
+  "modules": {
+    "shoreline_extraction": {
+      "name": "Shoreline Extraction",
+      "status": "Complete",
+      "version": "1.0.0",
+      "implementation": "src/shoreline_extraction.js",
+      "capabilities": [
+        "Multi-satellite data acquisition (Sentinel-1, Sentinel-2, Landsat)",
+          "Water detection using satellite-specific methods:",
+          "- Sentinel-1: VV/VH ratio with Otsu thresholding",
+          "- Sentinel-2: Multiple water indices (MNDWI, NDWI, AWEI, etc.)",
+          "- Landsat: AWEI with automatic thresholding",
+        "Morphological operations for noise reduction",
+        "Connected component analysis for patch filtering",
+        "Vector conversion and shoreline extraction",
+        "AOI-based clipping and refinement"
+      ]
+    },
+    "slope": {
+      "name": "Slope",
+      "status": "Planned",
+      "version": "0.1.0",
+      "implementation": "src/slope.js",
+      "capabilities": [
+      ]
+    },
+    "geomorphology": {
+      "name": "Geomorphology",
+      "status": "Planned",
+      "version": "0.1.0",
+      "implementation": "src/geomorphology.js",
+      "capabilities": [
+      ]
+    },
+    "mean_wave_height": {
+      "name": "Mean Wave Height",
+      "status": "Planned",
+      "version": "0.1.0",
+      "implementation": "src/mean_wave_height.js",
+      "capabilities": [
+      ]
+    },
+    "mean_tidal_range": {
+      "name": "Mean Tidal Range",
+      "status": "Planned",
+      "version": "0.1.0",
+      "implementation": "src/mean_tidal_range.js",
+      "capabilities": [
+      ]
+    },
+    "relative_sea_level": {
+      "name": "Relative Sea Level",
+      "status": "Planned",
+      "version": "0.1.0",
+      "implementation": "src/relative_sea_level.js",
+      "capabilities": [
+      ]
+    },
+    "coastal_erosion_accretion": {
+      "name": "Coastal Erosion/Accretion",
+      "status": "Planned",
+      "version": "0.1.0",
+      "implementation": "src/coastal_erosion_accretion.js",
+      "capabilities": [
+      ]
+    },
+    "coastal_vulnerability_index": {
+      "name": "Coastal Vulnerability Index",
+      "status": "Planned",
+      "version": "0.1.0",
+      "implementation": "src/coastal_vulnerability_index.js",
+      "capabilities": [
+      ]
+    }
+  },
+  "benefits": {
+    "scientific": {
+      "rapidAssessment": "Minimizes manual overhead for faster coastal hazard studies",
+      "scalability": "Cloud-based approach scales to large or remote AOIs without hardware barriers",
+      "transparency": "Open-source code fosters replicability and peer review",
+      "customizability": "Researchers can adapt parameters for region-specific needs"
+    }
+  },
+  "_metadata": {
+    "lastUpdated": "2024-02-19T14:24:13Z",
+    "version": "1.0.0",
+    "schema": "project/v1"
+  }
+}
