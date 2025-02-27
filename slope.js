@@ -78,7 +78,7 @@ var demSources = [
   {
     label: 'ALOS World 3D (AW3D30)',
     value: 'ALOS',
-    collection: 'JAXA/ALOS/AW3D30/V3_2',
+    collection: 'JAXA/ALOS/AW3D30/V2_2',
     band: 'DSM',
     resolution: 30,
     description: 'Global 30m DEM from JAXA (2006-2011). More recent than SRTM.'
@@ -95,14 +95,14 @@ var demSources = [
     label: 'Copernicus GLO-30',
     value: 'COPERNICUS',
     collection: 'COPERNICUS/DEM/GLO30',
-    band: 'DEM',
+    band: 'elevation',
     resolution: 30,
     description: 'Global 30m DEM from Copernicus (2019-2020).'
   },
   {
     label: 'MERIT DEM',
     value: 'MERIT',
-    collection: 'MERIT/DEM/v1_0_3',
+    collection: 'MERIT/Hydro/v1_0_1',
     band: 'dem',
     resolution: 90,
     description: 'Error-reduced global DEM at 90m. Better for flat coastal areas.'
